@@ -1,0 +1,88 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* styles for navigation bar */
+nav{
+    padding: 0 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+}
+
+#menus{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+#menu-icon, #cart{
+    font-size: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin-top: 10px;
+    display: none;
+}
+
+.menu{
+    margin-right: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* styles for header section  */
+
+
+
+
+@media (max-width: 992px){
+    
+    nav{
+        padding: 0 60px;
+    }
+
+}
+
+@media (max-width: 768px){
+    nav{
+        padding: 0 20px;
+    }
+    #logo{
+        font-size: 1.75rem;
+    }
+    .manu a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px){
+    #menu-icon, #cart{
+        display: block;}
+
+    #menu-container{
+        display: none;
+    }
+
+    nav{
+        padding: 0 10px;
+    }
+    #logo{
+        font-size: 1.5rem;
+    }
+    .manu a{
+        font-size: 1rem;
+    }
+}
