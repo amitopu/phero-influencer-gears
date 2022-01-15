@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    background-color: rgb(235, 235, 235);
 }
 
 /* styles for navigation bar */
@@ -108,17 +109,6 @@ button:hover{
     transition: 1.5s ease-in-out;
 }
 
-@media (max-width: 992px){
-    
-    nav{
-        padding: 0 60px;
-    }
-    header{
-        padding: 0 60px;
-    }
-
-}
-
 /* styles for logos section  */
 
 #logo-container{
@@ -141,6 +131,85 @@ button:hover{
 .logos img{
     margin: 10px 5px;
 }
+
+/* styles for product section  */
+#product-headline{
+    font-family: 'Robot', sans-serif;
+    color: rgb(50, 50, 50);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 70px;
+}
+#product-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 10%;
+    margin-top: 40px;
+
+}
+
+.product-card{
+    padding: 8px;
+    border-radius: 10px;
+    margin: 20px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    width: 28%;
+}
+
+.product-card img{
+    width: 100%;
+}
+
+.product-title{
+    font-family: 'Robot', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin: 8px 0;
+}
+
+.price{
+    margin: 8px 0;
+    font-family: 'Robot', sans-serif;
+    color: rgb(50, 50, 50);
+    font-size: 1.5rem;
+}
+
+.fa-star, .fa-star-half-alt{
+    color: rgb(255, 187, 0);
+    margin: 8px 0;
+}
+
+.product-description{
+    margin: 2px 0;
+    font-family: 'Robot', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+}
+
+@media (max-width: 992px){
+    
+    nav{
+        padding: 0 60px;
+    }
+    header{
+        padding: 0 60px;
+    }
+
+    #product-container{
+        padding: 0 8%;
+    }
+    .product-card{
+        width: 40%;
+    }
+
+}
+
 
 @media (max-width: 768px){
     /* style change for nav bar  */
@@ -167,6 +236,14 @@ button:hover{
     #header-details{
         width: 50%;
     }
+
+    #product-container{
+        padding: 0 5%;
+    }
+    .product-card{
+        width: 80%;
+    }
+    
 }
 
 @media (max-width: 576px){
