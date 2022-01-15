@@ -137,7 +137,7 @@ button:hover{
 #product-headline{
     font-family: 'Robot', sans-serif;
     color: rgb(50, 50, 50);
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 70px;
 }
@@ -210,6 +210,20 @@ footer{
     align-items: center;
     height: 250px;
     background-color: rgb(22, 6, 59);
+}
+
+/* styles for extra section  */
+#payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px;
+}
+
+#payment img{
+    max-width: 80%;
+    border-radius: 10px;
 }
 
 /* styles for footer */
