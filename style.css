@@ -119,6 +119,29 @@ button:hover{
 
 }
 
+/* styles for logos section  */
+
+#logo-container{
+    padding: 0 100px;
+    margin-top: 70px;
+}
+
+.lines{
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(90deg, white, darkgrey, white);
+}
+
+.logos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.logos img{
+    margin: 10px 5px;
+}
+
 @media (max-width: 768px){
     /* style change for nav bar  */
     nav{
