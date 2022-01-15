@@ -132,6 +132,7 @@ button:hover{
     margin: 10px 5px;
 }
 
+
 /* styles for product section  */
 #product-headline{
     font-family: 'Robot', sans-serif;
@@ -191,6 +192,53 @@ button:hover{
     font-weight: 600;
     color: rgb(50, 50, 50);
 }
+
+#more{
+    display: flex;
+    justify-content: center;
+}
+
+#more button{
+    background-color: rgb(235, 235, 235);
+    color: rgb(224, 48, 107);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: rgb(22, 6, 59);
+}
+
+/* styles for footer */
+
+footer h1{
+    font-family: 'Robot', sans-serif;
+    font-size: 1.8rem;
+    color: rgb(235, 235, 235);
+    margin: 8px;
+}
+
+footer p{
+    font-family: 'Robot', sans-serif;
+    font-size: 1rem;
+    color: rgb(235, 235, 235);
+    margin: 5px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+}
+
+footer div i{
+    color: rgb(235, 235, 235);
+    margin: 10px;
+    font-size: 2rem;
+}
+
 
 @media (max-width: 992px){
     
