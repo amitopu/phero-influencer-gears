@@ -45,19 +45,86 @@ nav{
 
 /* styles for header section  */
 
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-top: 60px;
+}
 
+#header-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 55%;
+}
 
+#header-image{
+    width: 40%;
+}
+
+#header-image img{
+
+    width: 100%;
+    border: 3px solid rgb(216, 195, 255);
+    border-radius: 50%;
+}
+
+h1{
+    font-family: 'Robot', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(50, 50, 50);
+    letter-spacing: 1pt;
+}
+
+h1 span{
+    font-size: 3rem;
+}
+
+header p{
+    font-family: 'Robot', sans-serif;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    width: 70%;
+}
+
+button{
+    height: 45px;
+    width: 200px;
+    background-color: rgb(224, 48, 107);
+    border-radius: 20px;
+    border: 0px;
+    font-family: 'Robot', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: white;
+
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: 1.5s ease-in-out;
+}
 
 @media (max-width: 992px){
     
     nav{
         padding: 0 60px;
     }
+    header{
+        padding: 0 60px;
+    }
 
 }
 
 @media (max-width: 768px){
+    /* style change for nav bar  */
     nav{
+        padding: 0 20px;
+    }
+    header{
         padding: 0 20px;
     }
     #logo{
@@ -66,9 +133,21 @@ nav{
     .manu a{
         font-size: 1rem;
     }
+
+    /* style chang for header section  */
+    header{
+        padding: 0 20px;
+    }
+    #header-image{
+        width: 50%;
+    }
+    #header-details{
+        width: 50%;
+    }
 }
 
 @media (max-width: 576px){
+    /* style chang for nav bar  */
     #menu-icon, #cart{
         display: block;}
 
@@ -84,5 +163,24 @@ nav{
     }
     .manu a{
         font-size: 1rem;
+    }
+
+    /* style chang for header section  */
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+    #header-details{
+        width: 90%;
+        align-items: center;
+    }
+    #header-image{
+        width: 70%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    #header-details h1{
+        text-align: center;
     }
 }
